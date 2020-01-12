@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/BGitana/FriendFinder#readme",
   "dependencies": {
-    "node": "^13.6.0"
-  }
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node": "^13.6.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
 }
