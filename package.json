@@ -1,0 +1,23 @@
+{
+  "name": "routing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apiRoutes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BGitana/FriendFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BGitana/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/BGitana/FriendFinder#readme",
+  "dependencies": {
+    "node": "^13.6.0"
+  }
+}
