@@ -129,4 +129,12 @@ i {
     background-color: black;
     font-size: medium;
     padding: 8px 11px;
+   border-color: black;
+   
+}
+
+.form-control {
+    background-color: black;
+    font-size: medium;
+    border: none;
 }
