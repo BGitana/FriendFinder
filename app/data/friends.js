@@ -6,7 +6,7 @@
 // ===============================================================================
 var friends = [
   {
-    name: "Owen",
+    name: "MikeOwen",
     photo: "https://media.giphy.com/media/1skTYzBWynK1y/giphy.gif",
     scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
   },
