@@ -9,6 +9,7 @@ var totalDifference = 0;
 
 
 module.exports = function(app) {
+    // Display all available friends
   app.get("/api/friends", function(req, res) {
     res.json(friends);
   });
@@ -18,6 +19,7 @@ module.exports = function(app) {
   // ...the JSON is pushed to the appropriate Javascript array
 
   app.post("/api/friends", function(req, res) {
+    console.log(req.body.userScore)
     var greatMatch = {
       name: "",
       image: "",
