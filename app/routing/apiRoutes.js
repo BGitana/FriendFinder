@@ -23,7 +23,7 @@ module.exports = function(app) {
     var greatMatch = {
       name: "",
       image: "",
-      matchDifference: 1000
+      matchDifference: 100
     };
 
     var usrData = req.body;

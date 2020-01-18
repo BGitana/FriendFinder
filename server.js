@@ -4,7 +4,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-var fs = require('fs');
+// var fs = require('fs');
 // ==============================================================================
 // EXPRESS CONFIGURATION
 // This sets up the basic properties for our express server
@@ -23,20 +23,21 @@ var PORT = process.env.PORT || 3000; // Sets an initial port. We'll use this lat
 // ////////////ORIGINAL///////////////
  
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
  
 // parse application/json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 // parse various different custom JSON types as JSON
-app.use(bodyParser.json({ type: 'application/*+json' }))
- 
-// parse some custom thing into a Buffer
-app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }))
+app.use(bodyParser.json({ type: 'application/*+json' }));
  
 // parse an HTML body into a string
-app.use(bodyParser.text({ type: 'text/html' }))
+// app.use(bodyParser.text({ type: 'text/html' }));
+app.use(bodyParser.text());
 
+// Expose the public directory to access CSS files
+app.use(express.static(path.join(__dirname, './app/public')));
 
 // --------- SteveSonoa ----------------////////////////////////////
 // Sets up the Express app to handle data parsing
@@ -54,13 +55,6 @@ app.use(bodyParser.text({ type: 'text/html' }))
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
-// var htmlRoutes = require('./app/routing/htmlRoutes')(app)
-// var apiRoutes = require('./app/routing/apiRoutes')(app)
-
-// --------- SteveSonoa ----------------////////////////////////////
-// require('./app/routing/apiRoutes.js')(app, path);
-// require('./app/routing/htmlRoutes.js')(app, path);
-// --------- SteveSonoa ----------------////////////////////////////
 // ==============================================================================
 // LISTENER
 // The below code effectively "starts" our server
