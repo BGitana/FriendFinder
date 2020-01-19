@@ -1,0 +1,140 @@
+.box {
+	display: flex;
+}
+
+/* .box .inner {
+	width: 500px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+} */
+
+.box .inner {
+	width: 800px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 8em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.box .inner:first-child { 
+	/* background-color: indianred;  */
+    /* color: darkred; */ 
+    background-color: black;
+    /* color:rgb(83, 82, 82); */
+    /* color:rgb(240, 8, 8); */
+    color:rgb(13, 44, 219);
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-20deg);
+}
+
+.box .inner:last-child {
+	/* background-color: lightcoral;
+    color: antiquewhite; */
+    /* background-color: rgb(240, 8, 8); */
+    /* background-color: rgb(13, 44, 219); */
+    background-color: rgb(219, 13, 168);
+    color: antiquewhite;
+    /* color: black; */
+	transform-origin: left;
+	transform: perspective(100px) rotateY(20deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 50;
+    letter-spacing: 0.08em;
+    line-height: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 50;
+    letter-spacing: 0.08em;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 3em;
+    font-weight: 50;
+    letter-spacing: 0.08em;
+    line-height: 2em;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 1.8em;
+    font-weight: 50;
+    letter-spacing: 0.08em;
+}
+
+h5 {
+    font-size: 2em;
+    font-weight: 50;
+    letter-spacing: 0.08em;
+    line-height: 2em;
+    margin-top: 5px;
+}
+
+p {
+    font-size: 1.8em;
+    font-weight: 50;
+    /* letter-spacing: 0.08em; */
+}
+
+.btn {
+    padding: 20px 30px;
+}
+
+.jumbotron {
+    box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+i {
+    color:  rgb(219, 13, 168);
+}
+
+.chosen-select {
+    background-color: black;
+    font-size: medium;
+    padding: 8px 11px;
+   /* border-color: black; */
+   
+}
+
+.form-control {
+    background-color: black;
+    font-size: medium;
+    /* border: none; */
+}

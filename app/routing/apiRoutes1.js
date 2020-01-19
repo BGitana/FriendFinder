@@ -31,7 +31,7 @@ module.exports = function(app) {
 		for (var i = 0; i < friends.length; i++) {
 			// console.log('friend = ' + JSON.stringify(friends[i]));
 
-			// Compute differenes for each question
+			// Compute differences for each question
 			var diff = 0;
 			for (var j = 0; j < userResponses.length; j++) {
 				diff += Math.abs(friends[i].scores[j] - userResponses[j]);
@@ -57,3 +57,4 @@ module.exports = function(app) {
 		res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
 	});
 };
+
