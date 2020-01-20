@@ -1,47 +1,102 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain) */
+/nav .nav-wrapper {
+	height: 90px;
+	box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ 
+ header {
+	height: 120px;
+ }
+ 
+ main h1 {
+	font-weight: bold;
+	font-size: 6ex;
+	text-shadow: 1px 1px 1px rgb(109, 108, 108), 3px 3px 5px rgb(33, 33, 34);
+ }
+ 
+ main h2 {
+	font-weight: 100;
+	font-size: 4ex;
+	text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+ }
+ 
+ main h3 {
+	font-weight: 100;
+	font-size: 5ex;
+	text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+ }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-} 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} 
+ h5 {
+	 font-weight: 80;
+	 font-size: 1.8ex;
+	 text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+	padding-top: 0.2rem;
+ }
+
+ h4 {
+		font-weight: 80;
+		font-size: 2.2ex;
+		text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+  
+	 }
+ 
+ h7 {
+	font-weight: 150;
+	font-size: 3ex;
+	text-shadow: 2px 2px 3px rgb(110, 27, 27);			 
+ }
+ 
+ h6 {
+	font-weight: 300;
+	font-size: 4ex;
+	/* text-shadow: 1px 1px 1px rgb(110, 27, 27), 2px 2px 3px rgb(68, 26, 34); */
+	text-shadow: 2px 2px 3px rgb(110, 27, 27);
+			   padding: 0.2rem;
+ }
+ 
+ p {
+	font-weight: 400;
+	font-size: 2ex;
+	text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+ }
+ 
+ nav .brand-logo {
+	font-weight: 250;
+	font-size: 2.5rem;
+	padding-top: 1rem;
+	text-shadow: 1px 1px 1px rgb(110, 27, 27), 3px 3px 5px rgb(68, 26, 34);
+ }
+ 
+ 
+ .mainpanel{
+	box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ 
+ #mainpanel-content {
+	margin: 50px;
+ }
+ 
+ .btn {
+	text-shadow: 1px 1px 1px rgb(110, 27, 27), 3px 3px 5px rgb(68, 26, 34);
+	box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-weight: 350;
+	margin-top: 3rem;
+ }
+ 
+ footer.page-footer {
+	box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-top: 0;
+ }
+ 
+ p a:hover {
+   background-color: #ff1744 !important;
+ }
+
+ .material-placeholder {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+
+ .materialboxed {
+	 box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
