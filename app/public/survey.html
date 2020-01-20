@@ -1,380 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Friend Finder Pro</title>
-
-	<!-- Link to the jQuery Library -->
-  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
-  	<!-- Including Font Awesome Icons -->
-  	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
-
-	<!-- Link to reset stylesheet -->
-	<link rel="stylesheet" href="css/reset.css">
-
-	<!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<!-- Compiled and minified Materialize CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		 
-   <!-- <link rel="stylesheet" href="css/style.css"> -->
-
-   <!-- //////////////////////// -->      
-
-
-<style>
-nav .nav-wrapper {
-   height: 90px;
-   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-header {
-   height: 120px;
-}
-
-main h1 {
-   font-weight: bold;
-   font-size: 6ex;
-   text-shadow: 1px 1px 1px rgb(109, 108, 108), 3px 3px 5px rgb(33, 33, 34);
-}
-
-main h2 {
-   font-weight: 100;
-   font-size: 4ex;
-   text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
-}
-
-h5 {
-   font-weight: 80;
-   font-size: 1.8ex;
-   text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
-			  padding-top: 0.2rem;
-}
-
-p {
-   font-weight: 400;
-   font-size: 2ex;
-   text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
-}
-
-nav .brand-logo {
-   font-weight: 250;
-   font-size: 2.5rem;
-   padding-top: 1rem;
-   text-shadow: 1px 1px 1px rgb(110, 27, 27), 3px 3px 5px rgb(68, 26, 34);
-}
-
-
-.mainpanel{
-   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#mainpanel-content {
-   margin: 50px;
-}
-
-.btn {
-   text-shadow: 1px 1px 1px rgb(110, 27, 27), 3px 3px 5px rgb(68, 26, 34);
-   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   font-weight: 350;
-   margin-top: 3rem;
-}
-
-footer.page-footer {
-   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   padding-top: 0;
-}
-
-p a:hover {
-  background-color: #ff1744 !important;
-}
-
-</style>
-
-
-
-</head>
-
-<body class="#424242 grey darken-3">
-
-	<header>
-		<nav>
-			<div class="nav-wrapper #ff1744 red accent-3">
-
-				<a href="/" class="brand-logo center #ffffff white-text ">FRIENDfinder</a>
-				
-			</div>
-		</nav>
-	</header>
-
-	<main>
-
-		<!-- ///////////////// -->
+		<title>Friend Finder Pro</title>
 	
-				
-		<!-- ////////////////// -->
+		<!-- Link to the jQuery Library -->
+		  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	
+		  <!-- Including Font Awesome Icons -->
+		  <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+	
+		<!-- Link to reset stylesheet -->
+		<link rel="stylesheet" href="css/reset.css">
+	
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+		<!-- Compiled and minified Materialize CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	
+		<!-- Compiled and minified Materialize JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+			  
+		<link rel="stylesheet" href="css/style.css">
 
 
-		<div class="container">
-			<div class="row #212121 grey darken-4">
-				<div class="col s12 z-depth-5 mainpanel">
-					<div id="mainpanel-content">
-						<h1 class="center">Survey Questions<i class="material-icons ">favorite</i></h1>
+		<style>
+			nav .nav-wrapper {
+			   height: 90px;
+			   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			
+			header {
+			   height: 120px;
+			}
+			
+			main h1 {
+			   font-weight: bold;
+			   font-size: 6ex;
+			   text-shadow: 1px 1px 1px rgb(109, 108, 108), 3px 3px 5px rgb(33, 33, 34);
+			}
+			
+			main h2 {
+			   font-weight: 100;
+			   font-size: 4ex;
+			   text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+			}
+			
+			main h3 {
+			   font-weight: 100;
+			   font-size: 5ex;
+			   text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+			}
 
-						<div class="divider"></div>
+			h5 {
+				font-weight: 80;
+				font-size: 1.8ex;
+				text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+			   padding-top: 0.2rem;
+			}
+			
+			h4 {
+			   font-weight: 150;
+			   font-size: 3ex;
+			   text-shadow: 2px 2px 3px rgb(110, 27, 27);
+						 
+			}
+			
+			h6 {
+			   font-weight: 300;
+			   font-size: 4ex;
+			   /* text-shadow: 1px 1px 1px rgb(110, 27, 27), 2px 2px 3px rgb(68, 26, 34); */
+			   text-shadow: 2px 2px 3px rgb(110, 27, 27);
+						  padding: 0.2rem;
+			}
+			
+			p {
+			   font-weight: 400;
+			   font-size: 2ex;
+			   text-shadow: 1px 1px 1px rgb(29, 28, 28), 3px 3px 5px rgb(33, 33, 34);
+			}
+			
+			nav .brand-logo {
+			   font-weight: 250;
+			   font-size: 2.5rem;
+			   padding-top: 1rem;
+			   text-shadow: 1px 1px 1px rgb(110, 27, 27), 3px 3px 5px rgb(68, 26, 34);
+			}
+			
+			
+			.mainpanel{
+			   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			
+			#mainpanel-content {
+			   margin: 50px;
+			}
+			
+			.btn {
+			   text-shadow: 1px 1px 1px rgb(110, 27, 27), 3px 3px 5px rgb(68, 26, 34);
+			   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			   font-weight: 350;
+			   margin-top: 3rem;
+			}
+			
+			footer.page-footer {
+			   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			   padding-top: 0;
+			}
+			
+			p a:hover {
+			  background-color: #ff1744 !important;
+			}
 
-						<h3 class="csshook #bdbdbd grey-text text-lighten-1">About You</h3>
+			.material-placeholder {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 
-						<div class="input-field col s6">
-							<h5>Name (Required)</h5>
-							<i class="material-icons prefix">account_circle</i>
-							<input type="text" class="validate" placeholder="Your Name Here" id="userName">
-						</div>
+			.materialboxed {
+				box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
 
-						<div class="input-field col s6">
-							<h5>Link to Photo Image (Required)</h5>
-							<i class="material-icons prefix">picture_in_picture</i>
-							<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
-						</div>
+			</style>
+			
 
-						<!-- Survey Questions -->
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 1</h3>
-							<h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
-							<select id="question1">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+	</head>
+	
+	<body class="#424242 grey darken-3">
+		<header>
+			<nav>
+				<div class="nav-wrapper #ff1744 red accent-3">
+	
+					<a href="/" class="brand-logo center #ffffff white-text ">FRIENDfinder</a>
+					
+				</div>
+			</nav>
+		</header>
+	
+		<main>
+			<div class="container">
+				<div class="row #212121 grey darken-4">
+					<div class="col s12 z-depth-5 mainpanel">
+						<div id="mainpanel-content">
+							<h1>Survey Questions<i class="material-icons ">favorite</i></h1>
+							<div class="divider"></div>
+	
+							<h2 class="csshook #bdbdbd grey-text text-lighten-1">About You</h2>
+	
+							<div class="input-field col s12">
+								<h5 class="csshook #bdbdbd grey-text text-lighten-1">Name (Required)</h5>
+								<input type="text" class="validate" placeholder="Your Name Here" id="userName">
+							</div>
+	
+							<div class="input-field col s12">
+								<h5 class="csshook #bdbdbd grey-text text-lighten-1">Link to Photo Image (Required)</h5>
+								<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+							</div>
+	
+							<!-- Survey Questions -->
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 1</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">Your mind is always buzzing with unexplored ideas and plans.</h4>
+								<select id="question1">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 2</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">Generally speaking, you rely more on your experience than your imagination.</h4>
+								<select id="question2">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 3</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+								<select id="question3">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 4</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">You rarely do something just out of sheer curiosity.</h4>
+								<select id="question4">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 5</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">People can rarely upset you.</h4>
+								<select id="question5">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 6</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">It is often difficult for you to relate to other people’s feelings.</h4>
+								<select id="question6">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 7</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">In a discussion, truth should be more important than people’s sensitivities.</h4>
+								<select id="question7">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 8</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">You rarely get carried away by fantasies and ideas.</h4>
+								<select id="question8">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 9</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+								<select id="question9">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<div class="input-field col s12">
+								<h2 class="csshook #bdbdbd grey-text text-lighten-1">Question 10</h2>
+								<h4 class="csshook #bdbdbd grey-text text-lighten-1">You feel more energetic after spending time with a group of people.</h4>
+								<select id="question10">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongly Agree)</option>
+								</select>
+							</div>
+	
+							<!-- Survey Submit Button -->
 
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 2</h3>
-							<h5>Generally speaking, you rely more on your experience than your imagination.</h5>
-							<select id="question2">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 3</h3>
-							<h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
-							<select id="question3">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 4</h3>
-							<h5>You rarely do something just out of sheer curiosity.</h5>
-							<select id="question4">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 5</h3>
-							<h5>People can rarely upset you.</h5>
-							<select id="question5">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 6</h3>
-							<h5>It is often difficult for you to relate to other people’s feelings.</h5>
-							<select id="question6">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 7</h3>
-							<h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
-							<select id="question7">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 8</h3>
-							<h5>You rarely get carried away by fantasies and ideas.</h5>
-							<select id="question8">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 9</h3>
-							<h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
-							<select id="question9">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h3 class="csshook #bdbdbd grey-text text-lighten-1">Question 10</h3>
-							<h5>You feel more energetic after spending time with a group of people.</h5>
-							<select id="question10">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<!-- Survey Submit Button -->
-						<div>
-							<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
-								<i class="material-icons right">send</i>
-							</button>
+							<div>
+								<button class="btn waves-effect waves-light #ff1744 red accent-3" type="submit" name="action" id="submitButton">Submit Responses
+									<i class="material-icons right">send</i>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</main>
-
-	<footer class="page-footer pink accent-2">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Friend Finder App</h5>
-					<p class="grey-text text-lighten-4">Thank you for taking the brief survey. Your responses will be used for training purposes only :-].</p>
-				</div>
-				<div class="col l4 offset-l2 s12">
-					<h5 class="white-text">Links</h5>
-					<ul>
-						<li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://github.com/angrbrd/friend-finder">GitHub Repo</a></li>
-					</ul>
+		</main>
+		<footer class="page-footer #212121 grey darken-4">	
+			<div class="container">		
+				<div class="row">		
+					<div class="col l6 s12 center">		
+							  <p>
+								 <a class="#bdbdbd grey-text text-lighten-1" href="/api/friends">API Friends List</a> |||
+								<a class="#bdbdbd grey-text text-lighten-1"
+								  target="_blank"
+								  href="https://github.com/BGitana/FriendFinder.git"
+								  >GitHub Repo</a> |||
+								  <a class="#bdbdbd grey-text text-lighten-1"
+								  href="/survey"
+									>Survey</a>
+							  </p>
+							</div>
+					<div class="col l4 offset-l2 s12 center">
+						<h5 class="#bdbdbd grey-text text-lighten-1">FRIENDfinder APP © 2019 Copyright Bgitana</h5>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				© 2017 angrbrd entertainment
-				<a class="grey-text text-lighten-4 right" href="https://github.com/angrbrd">Reference Work</a>
+		</footer>
+	
+		<!-- Modal Dialog Displaying Closest Friend Match -->
+		<div id="modal1" class="modal center #ff1744 red accent-3">
+			
+			<div class="modal-content">
+				<h4 class="csshook #f5f5f5 grey-text text-lighten-4">Closest Friend Match</h4>
+				<div class="divider"></div>
+				<h6 class="csshook #f5f5f5 grey-text text-lighten-4" id="userMatch"></h6>
+				<img id="userMatchImage" class="materialboxed center" width="260" src="">
+				<br>
+				<div class="divider"></div>
+				<!-- ///////////////// --> 
+				<a href="/survey">
+					<button class="btn waves-effect waves-light #424242 grey darken-3" type="submit" name="action">Try Again!</button>
+
+					<a href="/">
+						<button class="btn waves-effect waves-light #424242 grey darken-3" type="submit" name="action">Home</button>
+				<!-- ///////////////// -->
 			</div>
 		</div>
-	</footer>
-
-	<!-- Modal Dialog Displaying Closest Friend Match -->
-	<div id="modal1" class="modal">
-		<div class="modal-content">
-			<h4>Closest Friend Match</h4>
-			<div class="divider"></div>
-			<h5 id="userMatch"></h5>
-			<img id="userMatchImage" class="materialboxed" width="650" src="">
-		</div>
-		<div class="modal-footer">
-			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
-		</div>
-	</div>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('select').material_select();
-
-			$('.modal').modal({
-				dismissible: false, // Modal can be dismissed by clicking outside of the modal
-				opacity: .5, // Opacity of modal background
-				inDuration: 300, // Transition in duration
-				outDuration: 200, // Transition out duration
-				startingTop: '4%', // Starting top style attribute
-				endingTop: '10%' // Ending top style attribute
+	
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('select').material_select();
+	
+				$('.modal').modal({
+					dismissible: false, // Modal can be dismissed by clicking outside of the modal
+					opacity: .2, // Opacity of modal background
+					inDuration: 300, // Transition in duration
+					outDuration: 200, // Transition out duration
+					startingTop: '4%', // Starting top style attribute
+					endingTop: '10%' // Ending top style attribute
+				});
 			});
-		});
-
-		// Activate submit button
-		$('#submitButton').on('click', function(event) {
-			event.preventDefault();
-
-			// Gather user inputs
-			var userInput = {
-				name: $('#userName').val().trim(),
-				photo: $('#userPhoto').val().trim(),
-				scores:[
-					$('#question1').val().trim(),
-					$('#question2').val().trim(),
-					$('#question3').val().trim(),
-					$('#question4').val().trim(),
-					$('#question5').val().trim(),
-					$('#question6').val().trim(),
-					$('#question7').val().trim(),
-					$('#question8').val().trim(),
-					$('#question9').val().trim(),
-					$('#question10').val().trim()
-				]
-			};
-
-			// console.log('userInput = ' + JSON.stringify(userInput));
-
-			// Add user inputs to friends list
-			$.post('/api/friends', userInput)
-      		.done(function(data) {
-      			// console.log('response = ' + JSON.stringify(data));
-
-      			// Set the name and image values of friend match
-      			$('#userMatch').html(data.matchName);
-		    	$("#userMatchImage").attr("src", data.matchImage);
-
-		    	// Pop open the modal dialog
-      			$('#modal1').modal('open');
-      		});
-		});
-	</script>
-</body>
-</html>
+	
+			// Activate submit button
+			$('#submitButton').on('click', function(event) {
+				event.preventDefault();
+	
+				// Gather user inputs
+				var userInput = {
+					name: $('#userName').val().trim(),
+					photo: $('#userPhoto').val().trim(),
+					scores:[
+						$('#question1').val().trim(),
+						$('#question2').val().trim(),
+						$('#question3').val().trim(),
+						$('#question4').val().trim(),
+						$('#question5').val().trim(),
+						$('#question6').val().trim(),
+						$('#question7').val().trim(),
+						$('#question8').val().trim(),
+						$('#question9').val().trim(),
+						$('#question10').val().trim()
+					]
+				};
+	
+				// console.log('userInput = ' + JSON.stringify(userInput));
+	
+				// Add user inputs to friends list
+				$.post('/api/friends', userInput)
+				  .done(function(data) {
+					  // console.log('response = ' + JSON.stringify(data));
+	
+					  // Set the name and image values of friend match
+					  $('#userMatch').html(data.matchName);
+					$("#userMatchImage").attr("src", data.matchImage);
+	
+					// Pop open the modal dialog
+					  $('#modal1').modal('open');
+				  });
+			});
+		</script>
+	</body>
+	</html>
