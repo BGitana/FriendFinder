@@ -1,9 +1,9 @@
 # FriendFINDER -App **:heart:**
-FullStack with Node and Express Servers
+FullStack mobile first with Node and Express Servers
 
 
 ### Overview
-FriendFINDER is an application that allows the user to take a survey and be matched with a new best friend based on their answers! Take the 10-question survey and we'll match you with a friend... no wrong answers here!
+FriendFINDER is a responsive web application that allows the user to take a survey and be matched with a new best friend based on their answers! Take the 10-question survey and we'll match you with a friend... no wrong answers here!
 Welcome to [FriendFINDER!](https://gtcbc-friendfinder.herokuapp.com/). Enjoy!
 
 
@@ -36,7 +36,7 @@ Returns the friends data in JSON format to the browser.
 
 ## What App Does
 
-FriendFINDER is a full stack node app deployed on Heroku. Data is saved on a file, not in a database. It uses Express to configure and operate the server, Body-Parser to pass the json data back and forth between files & functions, and fs to read & write from the data files on the server. Various routes are setup to complete the survey, view the JSON API, and post data into the app. A general catch-all route will bring all users to the homepage, regardless of the path the user attempts to access.
+FriendFINDER is a mobile first full stack node app deployed on Heroku. Data is saved on a file, not in a database. It uses Express to configure and operate the server, Body-Parser to pass the json data back and forth between files & functions, and fs to read & write from the data files on the server. Various routes are setup to complete the survey, view the JSON API, and post data into the app. A general catch-all route will bring all users to the homepage, regardless of the path the user attempts to access.
 
 
 ### Tech Used
