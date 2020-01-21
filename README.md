@@ -7,16 +7,6 @@ FriendFINDER is an application that allows the user to take a survey and be matc
 Welcome to [FriendFINDER!](https://gtcbc-friendfinder.herokuapp.com/). Enjoy!
 
 
-### Prerequisites
-
-- Clone down repo
-- Node.js - Download the latest version of Node https://nodejs.org/en/
-- Run command 'npm install' in Terminal or GitBash
-- Body-parser
-- Express
-- Path
-
-
 ### Commands
 
 This app is setup to listen on a Heroku default port. In the absence of Heroku, it sets the port to 8080 instead. Since no database management is required, setup should be a simple matter of simply uploading the files and having the server listen for a request.	
@@ -34,17 +24,19 @@ localhost:8080/api/friends
 Returns the friends data in JSON format to the browser.
 
 
+### Prerequisites
+
+- Clone down repo
+- Node.js - Download the latest version of Node https://nodejs.org/en/
+- Run command 'npm install' in Terminal or GitBash
+- Body-parser
+- Express
+- Path
+
+
 ## What App Does
 
 FriendFINDER is a full stack node app deployed on Heroku. Data is saved on a file, not in a database. It uses Express to configure and operate the server, Body-Parser to pass the json data back and forth between files & functions, and fs to read & write from the data files on the server. Various routes are setup to complete the survey, view the JSON API, and post data into the app. A general catch-all route will bring all users to the homepage, regardless of the path the user attempts to access.
-
-This App offers the user the chance to the take the survey as many times as they like. The user is directed to home page where they have the option to take the survey or look at JSON data for the friends that are currently housed within the application. 
-
-If the user decides to take the survey, they will be redirected to the appropriate page to begin. The user is asked to provide a name and URL image that they want to use as their "profile" picture this information will be stored in an array for future use by others interested in taking the survey.
-
-There are ten questions currently in the survey, the user has the ability to choose, on a scale of 1 to 5. The answers are stored until the end of the survey, where they are then taken and compared with other "friends" within the application. These scores are not aggregated for all 10 answers at the end, instead they are compared by difference per question, then the difference is taken and the stored "friend" with the smallest difference becomes the users new best friend.
-
-Once the user has completed the survey, they can choose to go back to the home page, visit the API page that houses information on all other "friends" or take the survey again, where a new set of answers may produce a new best friend!
 
 
 ### Tech Used
