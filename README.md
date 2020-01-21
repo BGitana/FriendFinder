@@ -34,7 +34,7 @@ Returns the friends data in JSON format to the browser.
 - Path
 
 
-## What App Does
+### What App Does
 
 FriendFINDER is a mobile first full stack node app deployed on Heroku. Data is saved on a file, not in a database. It uses Express to configure and operate the server, Body-Parser to pass the json data back and forth between files & functions, and fs to read & write from the data files on the server. Various routes are setup to complete the survey, view the JSON API, and post data into the app. A general catch-all route will bring all users to the homepage, regardless of the path the user attempts to access.
 
