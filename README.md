@@ -15,11 +15,11 @@ node server.js
 ```
 then navigate to 
 ```
-localhost:8080 in browser
+localhost:8000 in browser
 ```
 You should be able to click the survey button to navigate to the survey form.  Fill out all of the required fields on the survey form and click submit.  A Modal will pop-up with your best match.
 ```
-localhost:8080/api/friends
+localhost:8000/api/friends
 ```
 Returns the friends data in JSON format to the browser.
 
