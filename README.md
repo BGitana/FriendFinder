@@ -4,7 +4,7 @@ FullStack mobile first with Node and Express Servers
 
 ### Overview
 FriendFINDER is a responsive web application that allows the user to take a survey and be matched with a new best friend based on their answers! Take the 10-question survey and we'll match you with a friend... no wrong answers here!
-Welcome to [FriendFINDER!](https://gtcbc-friendfinder.herokuapp.com/). Enjoy!
+Welcome to [FriendFINDER](https://dry-badlands-26968.herokuapp.com/). Enjoy!
 
 
 ### Commands
